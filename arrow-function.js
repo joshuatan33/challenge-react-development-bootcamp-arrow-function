@@ -26,17 +26,31 @@ console.log(selfIntro2('Shanqyeet', 'Kendama', '18'))
 
 // tips: remove curly braces
 let squared = (x) => {
-  return x * x
+  return x * x;
 }
 
-let squared2 = (X) => (x * x)
+let squared2 = (X) => (x * x);
 
 /////////////////// EX 3 /////////////////////////////////////////
 
-const prices = [1.00, 2.00, 3.00, 4.00]
-const gst = 0.06
+const prices = [1.00, 2.00, 3.00, 4.00];
+const gst = 0.06;
 
 const pricesWithTax = prices.map(x => x * gst + x);    // Complete this with .map
 
 console.log(pricesWithTax) // you should get [1.06, 2.12, 3.18, 4.24]
+
+const prices2 = [1.00, 2.00, 3.00, 4.00]
+const gst2 = 0.06
+let newPrices = [];
+
+const pricesWithTax2 = prices2.forEach(function(element) {
+newPrices.push(element * gst2 + element);
+
+})
+
+  
+
+
+console.log(newPrices) // you should get [1.06, 2.12, 3.18, 4.24]
 
